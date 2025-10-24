@@ -1,194 +1,88 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sunrise College</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+ </head>
 <body>
-
-  
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="#"> 🌞🌄 Sunrise College
-    
-          <div class="spinner-grow spinner-grow-md text-danger"></div>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="menu">
-        <ul class="navbar-nav ms-auto">
-             <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      </div>
-      </nav>
-       <section class="hero d-flex align-atem-center justify-content-center text-align-center text-white">
-            <div>
-      <h1>🎒Welcome to 🏫🏫🏫Sunrise College📚</h1>
-      <p>Empowering Students for a Bright Future🌄🌟</p>
-      <a href="about.html" class="btn btn-light mt-3">Learn More</a>
+    <header class="Navbar">
+        <div class="logo">MyPortfolio</div>
+        <nav>
+            <div class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
             </div>
-       </section>
-              
-<section class="container my-5">
-<img src="image1.jpg" class="rounded-circle small-img" alt="Cinque Terre">
-
-  <h2 class="text-center mb-4 text-success">🎓 Admission Form🤵‍♂️📝</h2>
-  <form id="admissionForm" class="p-4 shadow rounded bg-info">
-    <div class="row mb-3">
-      <div class="col-md-6">
-        <label for="name" class="form-label b">Full Name</label>
-        <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
-      </div>
-      <div class="col-md-6">
-        <label for="email" class="form-label">Email Address</label>
-        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
-      </div>
+        </nav>
+            <button id="menu-btn">☰</button>
+    <button id="dark-mode-toggle">🌙</button>
+  
+    </header>
+     <section id="home" class="hero">
+    <h1>Hi, I'm <span id="typing"></span></h1>
+    <p>Welcome to my interactive portfolio website.</p>
+    <button class="btn" id="scrollBtn">Explore ↓</button>
+  </section>
+  
+  <section id="skills" class="skills">
+    <h2>My Skills</h2>
+    <div class="skill-bar">
+      <p>HTML</p>
+      <div class="progress"><div class="fill" data-percent="90"></div></div>
     </div>
+    <div class="skill-bar">
+      <p>CSS</p>
+      <div class="progress"><div class="fill" data-percent="80"></div></div>
+    </div>
+    <div class="skill-bar">
+      <p>JavaScript</p>
+      <div class="progress"><div class="fill" data-percent="95"></div></div>
+    </div>
+     <div class="skill-bar">
+      <p>Bootstrap</p>
+      <div class="progress"><div class="fill" data-percent="75"></div></div>
+    </div>
+  </section>
 
-    <div class="row mb-3">
-      <div class="col-md-6">
-        <label for="phone" class="form-label">Phone Number</label>
-        <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number" required>
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="card" data-tilt>
+      
+         <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Game Image" width="300" height="250">
+
+        <h3>Portfolio Website</h3>
       </div>
-      <div class="col-md-6">
-        <label for="stream" class="form-label">Select Stream</label>
-        <select class="form-select" id="stream" required>
-          <option value="">Choose...</option>
-          <option value="science">Science</option>
-          <option value="commerce">Commerce</option>
-          <option value="arts">Arts</option>
-        </select>
+      <div class="card" data-tilt>
+    <img src="image.jpg" width="300px" height="250">
+
+        <h3>JS Game</h3>
       </div>
-    </div>
-
-    <div class="mb-3">
-      <label for="address" class="form-label">Address</label>
-      <textarea class="form-control" id="address" rows="3" placeholder="Enter your address" required></textarea>
-    </div>
-
-    <div class="text-center">
-      <button type="submit" class="btn btn-primary px-4">
-        Submit Application
-      </button>
-    </div>
-  </form>
-</section>
-
-
-            <section class="container my-5">
-    <h2 class="text-center mb-4 text-primary">Our Courses</h2>
-    <div class="row">
-      <div class="col-md-4 mb-3">
-        <div class="card shadow">
-          <img src="science.jpg" class="card-img-top" alt="Science">
-          <div class="card-body">
-            <h5 class="card-title">Science Stream
-          
-              <a href="https://indiancollegeofcorrespondence.com/science-courses/?utm_source=chatgpt.com" target="_blank" class="btn btn-primary">Science Website</a>
-      </h5>
-<p class="card-text text-danger">Learn Physics, Chemistry & Biology from expert teachers.</p>
-          </div>
-        </div>
-      </div>
-
-        <div class="col-md-4 mb-3">
-      <div class="card shadow">
-    <img src="comares.jpg" class="card-img-top" alt="Commerce">
-    <div class="card-body text-center">
-      <h5 class="card-title">Commerce Stream
-        <a href="https://www.careers360.com/courses/commerce-course?utm_source=chatgpt.com" target="_blank" class="btn btn-primary">commerce Website</a>
-      </h5>
-     
-      <p class="card-text text-danger">Master Accounts, Business Studies, and Economics.</p>
-    </div>
-  </div>
-</div>
-      <div class="col-md-4 mb-3">
-        <div class="card shadow">
-          <img src="arts.jpg" class="card-img-top" alt="Arts">
-          <div class="card-body">
-            <h5 class="card-title">Arts Stream                
-                   <a href="https://www.sirjjschoolofart.in/?utm_source=chatgpt.com" target="_blank" class="btn btn-primary">Arts website</a>
-</h5>
-
-            <p class="card-text text-danger">Explore History, Geography, Political Science and more.</p>
-          </div>
-        </div>
+      <div class="card" data-tilt>
+        <img src="image2.jpg" width="300px" height="250">
+        <h3>UI Design</h3>
       </div>
     </div>
   </section>
-            
-<section id="canteen" class="py-5" style="background-color: rgba(83, 187, 156, 0.333)">
-  <div class="container">
-    <div class="text-center mb-5">
-      <h2 class="text-primary fw-bold">🍴🍕 Our College Canteen🍔🍟</h2>
-      <p class="text-muted">Healthy, tasty & hygienic food made with love for our students!</p>
-    </div>
-    <br>
-    <br>
 
-    <div class="row g-4">
-      <div class="col-md-4">
-        <div class="card shadow-sm h-100 text-center">
-          <img src="food6.jpg" class="card-img-top" alt="Meals" style="height: 230px; object-fit: cover;">
-          <div class="card-body">
-            <h5 class="card-title text-success">Delicious Meals</h5>
-            <p class="card-text text-danger">North & South Indian thalis, rice, dal, roti, and more!</p>
-            <br>
-            <br>
-            <button class="btn btn-outline-primary btn-sm">Order Now</button>
-          </div>
-        </div>
-      </div>
-      
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="fullName" required>
+      <input type="email" placeholder="Email" required>
+         <input type="mobile-num" placeholder="mobile-num" required>
+      <textarea placeholder="Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
 
-    
-      <div class="col-md-4">
-        <div class="card shadow-sm h-100 text-center">
-          <img src="food3.jpg" class="card-img-top" alt="Beverages" style="height: 230px; object-fit: cover;">
-          <div class="card-body">
-            <h5 class="card-title text-success">Pulao Rice</h5>
-            <p class="card-text text-danger">Chana Dal Pulao is a delicious protein-rich vegetarian dish made with chana dal and .</p>
-            <br>
-            <br>
-            <button class="btn btn-outline-primary btn-sm">Try Now</button>
-          </div>
-        </div>
-      </div>
-        
-      <div class="col-md-4">
-        <div class="card shadow-sm h-100 text-center">
-          <img src="food5.jpg" class="card-img-top" alt="Beverages" style="height: 230px; object-fit: cover;">
-          <div class="card-body">
-            <h5 class="card-title text-success">Drinks & Desserts</h5>
-            <p class="card-text text-danger">Cool drinks, juices, coffee, ice cream & healthy desserts.</p>
-            <br>
-            <br>
-            <button class="btn btn-outline-primary btn-sm">Try Now</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-  
- <footer>
-  
-    © 2025 Sunrise College 😍 | Designed by sejal gond 📝 ❤️
- 
-</footer>
-
-
-  <script src="first.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-            
-      </body>
-      </html>
+  <footer>
+    <p>© 2025 Interactive Portfolio</p>
+  </footer> 
+    <script src="script.js"></script>
+</body>
+</html>
